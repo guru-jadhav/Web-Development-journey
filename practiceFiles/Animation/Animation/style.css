@@ -1,0 +1,22 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-pink{
+    background-color: red;
+    padding: 0.1rem 0.2rem;
+}
+
+.btn-pink::before{
+    background-color: aqua;
+}

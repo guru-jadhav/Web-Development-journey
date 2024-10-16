@@ -1,0 +1,49 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+
+.container{
+    overflow: hidden;
+    /* height: 100vh;
+    width: 100vw; */
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(13, 117, 165);
+}
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+.profile{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.profile img{
+    height: 80%;
+    width: 100%;
+    object-fit: contain;
+    margin-top: 4rem;
+}
+
+.page3{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(160, 71, 71)
+}

@@ -1,0 +1,42 @@
+.container{
+    margin-left: 35%;
+    height: 500px;
+    width: 500px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile-image img{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    margin-top: 10px;
+}
+
+#name{
+    color: rgba(17, 8, 8, 0.764);
+    font-family:'Courier New', Courier, monospace;
+}
+
+#email a{
+   text-decoration: none; 
+}
+
+#phone a{
+    text-decoration: none;
+}
+
+#cell a{
+    text-decoration: none;
+}
+
+#menu-logo{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    align-content: center;
+    justify-content: center;
+}

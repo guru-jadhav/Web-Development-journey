@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    overflow: hidden;
+    background-color: #112d4e;
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+}
+
+
+#locationPermission{
+    background-color: rgba(225, 225, 225, 0.3);
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 2rem;
+    width: max-content;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* cursor: pointer; */
+}
+
+.locationDiv{
+    z-index: -1;
+}
+
+.cityDiv{
+    z-index: -1;
+}
+
+.WeatherReport{
+    z-index: -1;
+}
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0%;
+}
+
+.loading-png{
+    z-index: -1;
+}
+
+.noCity{
+    z-index: -1;
+    /* opacity: 0%; */
+}
+  

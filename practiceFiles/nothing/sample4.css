@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Satisfy&display=swap");
+@font-face {
+    font-family: IM Fell English SC;
+    src: url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Satisfy&display=swap");
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+a:visited{
+    color: darkgreen;
+}
+nav{
+    text-align: center;
+    font-style: oblique;
+}
+nav:hover{
+    color: red;
+}
+.nav-bar:hover{
+    color: red;
+    text-align: center;
+    font-style: oblique;
+}
+#introduction{
+    text-align: center;
+    display: inline;
+    color:rgb(147, 74, 189);
+    background-color: aqua;
+    margin: 10px;
+}
+#introduction:hover{
+    text-align: center;
+    color: pink;
+    background-color: aqua;
+    margin: 10px;
+}
+aside{
+    text-align: center;
+    float: right;
+    width: 30%;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+}
+aside:hover{
+    color: yellow;
+}
+table,th,td,tr{
+    border: solid black 10px;
+}
+.small{
+    font-size: smaller;
+    display: inline;
+    padding-right: 40px;
+    font-family: 'IM Fell English SC', serif;
+    font-family: 'Satisfy', cursive;
+}
+.large{
+    font-size: smaller;
+    display: inline;
+    padding-right: 40px;
+    font-family: 'IM Fell English SC', serif;
+    font-family: 'Satisfy', cursive;
+}
+.small:hover{
+    font-size: larger;
+    display: inline;
+    padding-right: 40px;
+}
+.large:hover{
+    font-size: larger;
+    display: inline;
+    padding-right: 40px;
+}
+
+#focus-pseudo{
+    height: 300px;
+    width: 300px;
+    border: solid black 1px;
+    overflow: scroll;
+}

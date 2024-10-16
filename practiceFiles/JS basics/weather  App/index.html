@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div id="wrapper" class="w-screen h-screen flex justify-center text-slate-200">
+        <div class="container h-[80%] w-[60%] mt-[4rem] flex flex-col items-center relative">
+            <h1 class="heading text-4xl font-semibold">WEATHER APP</h1>
+            <div class="search-and-weather h-[10%] w-[80%] flex justify-between mt-[2rem] text-xl">
+                <div class="w-[50%] flex justify-center">
+                    <input type="radio" name="Weather" id="your-weather" checked/>
+                    <label for="your-weather" id="your-weather-label" class="bg-white bg-opacity-[.5] flex justify-between items-center h-max w-max p-1.5 rounded-lg cursor-pointer">Your Weather</label>
+                </div>
+                <div class="w-[50%] flex justify-center">
+                    <input type="radio" name="Weather" id="search-weather"/>
+                    <label for="search-weather" id="search-weather-label" class="bg-opacity-[.5] flex justify-between items-center h-max w-max p-1.5 rounded-lg cursor-pointer">Search Weather</label>
+                </div>
+            </div>
+
+            <div class="relative w-[80%] flex flex-col justify-center items-center mt-[10rem]">
+                <div id="locationDiv" class=" flex flex-col justify-center items-center h-max w-[80%] mt-[5rem] mb-[5rem] absolute">
+                    <img src="./assets/location.png" alt="" height="80px" width="80px">
+                    <p class="text-3xl w-max mt-[1.5rem]">Grant Location Access</p>
+                    <p class="w-max text-base mt-[1rem]">Allow Access To Get Weather Information</p>
+                    <!-- This Button was not working because, it was hidden under noCity div(because i made it's(noCity div) opacity - 0, which made it not visible on the screen, but it was covering the button) -->
+                    <button id="locationPermission">Grant Location Access</button>
+                </div>
+    
+                <div id="cityDiv" class="cityDiv search-btn w-[70%] h-[50px] flex gap-[5px] absolute  mt-[-15rem]">
+                    <input type="text" name="city" id="city" placeholder="Search for city" autocomplete="off" class="w-[95%] h-full rounded-lg text-black p-[15px] bg-white bg-opacity-[.3] outline-none"/>
+                    <button id="search"><img src="./assets/search.png" alt="" height="30px" width="30px"></button>
+                </div>
+            </div>
+
+
+            <div id="WeatherReport" class="WeatherReport mt-[13rem] absolute flex flex-col justify-evenly items-center h-[70%] w-[80%]">
+                <img src="" id="countryFlag">
+                <h3 id="cityContainer" class="text-3xl"></h3>
+                <p class="text-xl" id="description"></p>
+                <p class="w-[80px] h-[80px]">
+                    <img src="" alt="" id="weather-png"/>
+                </p>
+                <h2 id="temprature" class="text-5xl font-semibold mb-[2.5rem]"></h2>
+                <div class="w-[100%] h-[150px] grid grid-cols-3 gap-[20px] justify-between">
+                    <div class="flex flex-col justify-center items-center bg-white bg-opacity-[.60] rounded-lg text-zinc-50">
+                        <img src="./assets/wind.png" alt="" height="60px" width="60px">
+                        <p class="text-xl font-semibold">WINDSPEED</p>
+                        <p class="text-xl font-semibold" id="windContainer"></p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center bg-white bg-opacity-[.60]  rounded-lg text-zinc-50">
+                        <img src="./assets/humidity.png" alt="" height="60px" width="60px">
+                        <p class="text-xl font-semibold">HUMIDITY</p>
+                        <p class="text-xl font-semibold" id="humidityContainer">0</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center bg-white bg-opacity-[.60]  rounded-lg text-zinc-50">
+                        <img src="./assets/cloud.png" alt="" height="60px" width="60px">
+                        <p class="text-xl font-semibold">CLOUDS</p>
+                        <p class="text-xl font-semibold" id="cloudContainer">0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="loading-png absolute mt-[12rem]" id="loading-png">
+                <img src="./assets/loading.gif" alt="" height="200px" width="200px"/>
+            </div>
+            <div id="noCity" class="flex flex-col justify-center items-center  mt-[-5rem] noCity">
+                <img src="./assets/not-found.png" alt="" height="200px" width="200px">
+                <h3 class="text-4xl font-bold ">NO CITY FOUND !</h3>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="white">
+    <title>Sample4</title>
+    <link rel="stylesheet" href="sample4.css">
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 5px solid black;
+            border-radius: 100%;
+            box-sizing: border-box;
+            /* when we add padding to the box the box size increases, 
+                but when we do box-sizing:boder-box; even after padding the box size is not increased, but the area of content is decreased 
+             */
+        }
+        #A{
+            text-align: center;
+            background-color:orange;
+            margin: 10px;
+            padding: 2px;
+            /* display: inline; */
+        }
+        #B{
+            text-align: center;
+            background-color: white;
+            margin: 10px;
+            padding: 2px;
+            /* display: inline; */
+            /* border-top: 0px; */
+        }
+        #C{
+            text-align: center;
+            background-color: #008000;
+            margin: 10px;
+            padding: 2px;
+            /* display: inline; */
+            /* border-top: 0px; */
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #focus-pseudo{
+            font-size: 25px;
+            font-family: 'IM Fell English SC', serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a href="#nav">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#main">Content</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">Resources</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://thecodehelp.in" target="_blank">Login</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </nav>
+    </header>
+
+    <main id="main">
+        <div id="introduction">
+            <h1>Hello!</h1>
+            <h2>Who iam i ?</br>
+                iam <strong>GURU JADHAV</strong> a full stack developer
+            </h2>
+            <aside>
+                Hello everyone iam GURU JADHAV 4th year student in information science and engineering at UVCE. I will be complete my BTech in 2024, iam aim to be a good software developer
+            </aside>
+        </div>
+        <br><br>
+        <h1 class="small">this is h1</h1></br>
+        <h2 class="small">this is h2</h2></br>
+        <h3 class="small">this is h3</h3></br>
+        <h4 class="large">this is h4</h4></br>
+        <h4 class="large">this is h5</h4></br>
+        <h4 class="large">this is h6</h4></br>
+
+    </main>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <div id="focus-pseudo">
+        <p>
+            <em>Lorem ipsum</em> dolor sit amet consectetur adipisicing elit. Placeat harum qui voluptatum quo ratione at sed quidem porro exercitationem earum, impedit, suscipit autem distinctio explicabo officiis similique voluptatem error. Molestiae!
+            Sint, maiores. Minus delectus culpa quo alias tempore assumenda, ab accusantium deleniti itaque, distinctio nostrum maiores? Ab eligendi possimus pariatur porro? Autem perferendis officia placeat exercitationem, distinctio ad obcaecati iste!
+            Placeat, eos labore hic, recusandae explicabo sunt corporis at laborum quas quis itaque id veniam doloremque modi culpa, magni rerum! Exercitationem incidunt aliquam, natus ducimus illo deleniti voluptatem facere debitis!
+            Voluptate, repudiandae. Nihil itaque veniam officiis fugit at impedit ipsa excepturi. Officiis, molestias consequuntur assumenda obcaecati dolorem odio ipsa quidem ex sit voluptatem maxime animi iste. Consectetur numquam voluptatibus tempora.
+            Dolor explicabo non est perspiciatis veritatis natus recusandae quisquam quis, vel asperiores, adipisci tempora! At doloremque eos earum amet enim id nobis? Doloribus sint, necessitatibus voluptatum debitis ipsum libero quasi!
+        </p>
+    </div>
+    <br><br>
+    <!-- <div class="box" id="A">A</div>
+    <div class="box" id="B">B</div>
+    <div class="box" id="C">C</div> -->
+</body>
+</html>

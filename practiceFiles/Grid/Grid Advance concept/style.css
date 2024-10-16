@@ -1,0 +1,77 @@
+.container{
+
+    background-color: yellow;
+    height: 1000px;
+    width: 1000px;
+
+    display: inline-grid;
+
+    grid-template-columns: 100px 100px;
+    grid-template-rows: repeat(3, 100px);
+
+    row-gap: 10px;
+    column-gap: 10px;
+
+    justify-content: space-evenly;
+    /*this is used to align the entire CELL (cell  created from grid) on the horizontal axis*/
+    align-content: space-evenly; 
+    /*this is used to align the entire CELL (cell  created from grid) on the vertical axis*/
+
+    /* justify-items: center;  */
+    /*this is used to align the items inside the cell (cell created from grid) on the horizontal axis*/
+    /* align-items: center;  */
+    /*this is used to align the items inside the cell (cell created from grid) on the vertical axis*/
+    
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+}
+
+#box1{
+    display: grid;
+    grid-template-columns: 10px repeat(1,25px);
+    grid-template-rows: repeat(3,25px);
+    row-gap: 2px;
+    column-gap: 2px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 
+    "h h"
+    "s c"
+    "f f"
+    ;
+    text-align: center;
+}
+
+#p1{
+    width: 100%;
+    background-color: black;
+    color: white;
+    grid-area: h;
+}
+
+#p2{
+    width: 100%;
+    background-color: black;
+    color: white;
+    grid-area: s;
+}
+
+#p3{
+    width: 100%;
+    background-color: black;
+    color: white;
+    grid-area: c;
+}
+
+#p4{
+    width: 100%;
+    background-color: black;
+    color: white;
+    grid-area: f;
+}

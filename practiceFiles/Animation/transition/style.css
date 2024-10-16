@@ -1,0 +1,28 @@
+.container{
+    height: 500px;
+    width: 800px;
+    background-color: aqua;
+    padding-top: 1px;
+    /* overflow: hidden; */
+}
+
+.box{
+    margin-left: 100px;
+    margin-top: 100px;
+    height: calc(25%);
+    width: calc(25%);
+    background-color: black;
+    color: white;
+    text-align: center;
+    /* transition: all 1.5s ease-in-out; */
+    transition: transform 1.5s cubic-bezier(0.01, 0.68, 0.98, 0.38), background-color 1.5s cubic-bezier(0.01, 0.68, 0.98, 0.38);
+}
+
+.box:hover{
+    /* width: calc(75%);
+    transition: width 1.5s ease-in-out 0s; */
+    /* transform: rotate(360deg); */
+    transform: translateX(500px) translateY(100px) rotate(360deg);
+    background-color: rgb(181, 83, 201);
+    /* transition: transform 1.5s ease-in-out; */
+}

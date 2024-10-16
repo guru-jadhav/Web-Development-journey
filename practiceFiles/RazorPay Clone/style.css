@@ -1,0 +1,142 @@
+.adiv {
+    position: relative;
+}
+
+.adiv::before {
+    content: "";
+    position: absolute;
+    background-color: #0b8ffa;
+    height: 20%;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    z-index: -1;
+}
+
+.adiv:hover::before {
+    z-index: 1;
+}
+
+.adiv:hover a {
+    color: #0b8ffa;
+}
+
+
+.wave {
+    position: absolute;
+    top: 60%;
+    right: 0;
+    z-index: -1;
+    height: 100px;
+    width: 100px;
+}
+
+.sample:hover .wave {
+    z-index: 5;
+}
+
+.sample:hover .grid-icons {
+    background-image: linear-gradient(to top right, white 10%, #00A2FF 50%);
+}
+
+.sign-up-fold::before {
+    content: "";
+    position: absolute;
+    left: 4.9rem;
+    height: 3.5rem;
+    width: 20%;
+    background-color: rgb(2, 228, 2);
+    border-radius: 1px;
+    transform: skew(10deg, 0deg);
+}
+
+.sign-up-fold1::before {
+    content: "";
+    position: absolute;
+    left: 11rem;
+    height: 3.5rem;
+    width: 20%;
+    background-color: rgb(2, 228, 2);
+    border-radius: 1px;
+    transform: skew(10deg, 0deg);
+}
+
+.sample {
+    transition: all 0.2s linear;
+}
+
+.sample:hover {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+
+/* This style is for company images moving */
+/* Container to hold the image */
+.scroll-container {
+    width: 55%;
+    height: 100%;
+    /* Set height of the div (smaller than image height) */
+    overflow: hidden;
+    /* Hide the overflow, so only part of the image is visible */
+    position: relative;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* The image that will scroll */
+.scroll-image {
+    width: 100%;
+    /* Ensure the image takes the full width */
+    height: auto;
+    /* Keep aspect ratio intact */
+    position: absolute;
+    animation-name: scroll-vertical;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode: both; */
+}
+
+/* Define the keyframes for scrolling effect */
+@keyframes scroll-vertical {
+    0% {
+        top: -2%;
+        /* Image starts fully below the container */
+    }
+
+    100% {
+        top: -100%;
+        /* Image ends fully above the container */
+    }
+}
+
+.test input[type="radio"] {
+    position: absolute;
+    opacity: 0%;
+}
+
+.test label {
+    position: relative;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.test label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    border-radius: 50%;
+    /* border: 2px solid #2196F3; */
+}
+
+.test input[type="radio"]:checked+label::before {
+    background-color: #0b8ffa;
+    /* Change color when checked */
+}

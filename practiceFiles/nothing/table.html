@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table, th, tr,td{
+            border: solid black 3px; 
+            border-collapse: collapse;
+        }
+        aside{
+            float: right;
+        }
+        iframe{
+            border: 2px solid black;
+            height: 300px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col span="1" style="background-color: aqua;">
+            <col span="1" style="background-color: darkgrey;">
+            <col span="1" style="visibility: collapse;">
+            <col span="" style="background-color: rgb(185, 154, 246);">
+        </colgroup>
+        <tr>
+            <p>we have hidden the thrid column in the below table using <b>colgroup</b> tag and <b>visibility:collapse</b> in style tag</p>
+            <th>Month</th>
+            <th>Savings</th>
+            <th>Salary</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>500</td>
+            <td>1000</td>
+            <td>2022</td>
+        </tr>
+        <tr>
+            <td>Feburary</td>
+            <td>00</td>
+            <td>2000</td>
+            <td>2022</td>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td>100</td>
+            <td>1000</td>
+            <td>2022</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>600</td>
+            <td>4000</td>
+        </tr>
+    </table>
+
+    </br>
+    <table>
+        <caption><b>UVCE 3</b><sup><b>rd</b></sup> <b>ISE SEM SYLLABUS</b></caption>
+        <thead>
+            <th>Sl.No</th>
+            <th>Course code</th>
+            <th>Title</th>
+            <th>Teaching Department</th>
+            <th>L</th>
+            <th>T</th>
+            <th>P</th>
+            <th>SS</th>
+            <th>Total hr/week</th>
+            <th>CIE Marks</th>
+            <th>SEE Marks</th>
+            <th>Credits</th>
+        </thead>
+        <tbody align="center">
+            <tr style="visibility: collapse;">
+                <td>1</td>
+                <td>18BSEM301 </td>
+                <td> Engineering 
+                    Mathematics - III</td>
+                <td>Mathematics</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>4</td>
+                <td>50</td>
+                <td>50</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>18CIPC302</td>
+                <td>Digital System Design</td>
+                <td>CSE/ISE</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>4</td>
+                <td>50</td>
+                <td>50</td>
+                <td>3</td>
+            </tr>
+            <tr>       
+                <td colspan="3">Total</td>
+                <td></td>
+                <td>18</td>
+                <td>08</td>
+                <td>06</td>
+                <td>00</td>
+                <td>32</td>
+                <td>450</td>
+                <td>400</td>
+                <td>24</td>
+            </tr>
+        </tbody>
+        <tfoot align="center">
+            <tr>
+                <td colspan="3">Total Marks</td>
+                <td colspan="9">850</td>
+            </tr>
+        </tfoot>
+        
+    </table>
+    </br>
+    
+    <table>
+        <caption style="font-size:20px;"><b>HTML TABLE HOMEWORK</b></caption>
+        <thead align="center">
+            <tr>
+                <td rowspan="3">Day</td>
+                <td colspan="3">Seminar</td>
+            </tr>
+            <tr>
+                <td colspan="2">Schedule</td>
+                <td rowspan="2">Topic</td>
+            </tr>
+            <tr>
+                <td>Begin</td>
+                <td>End</td>
+            </tr>
+
+        </thead>
+        <tbody align="center">
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2" style="background-color: antiquewhite;">8:00 am</td>
+                <td rowspan="2" style="background-color:rgb(185, 153, 249);">5:00 pm</td>
+                <td>Intoduction to XML</td>
+            </tr>
+            <tr>
+                <td>vitality: DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td style="background-color: antiquewhite;">8:00 am</td>
+                <td style="background-color: antiquewhite;">11:00 am</td>
+                <td>XPath</td>
+            </tr>
+            <tr>
+                <td style="background-color: antiquewhite;">11:00 am</td>
+                <td style="background-color: lightgrey;">2:00 pm</td>
+                <td rowspan="2">XSL Transformations</td>
+                
+            </tr>
+            <tr>
+                <td style="background-color: lightgrey;">2:00 pm</td>
+                <td style="background-color:rgb(185, 154, 246);">5:00 pm</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td style="background-color: antiquewhite;">8:00 am</td>
+                <td style="background-color: lightgrey;">12:00 pm</td>
+                <td>XSL Formating Objects</td>
+            </tr>
+        </tbody>
+        <tfoot align="center">
+            <tf>
+                <td colspan="4">Thank You</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    </br>
+    <table>
+        <tr align="center">
+            <td colspan="2">Welcome to Code Help</td>
+        </tr>
+        <tr>
+            <td><label for="fname">Username: </label></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="fname">Password: </label></td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+</br>
+    <button>Submit</button>
+
+    <br><br><br><br><br>
+    <iframe src="https://www.wikipedia.org"  title="wikipedia">Wikipedia</iframe>
+    <br><br><br><br><br>
+    <iframe src="http://127.0.0.1:5500/linux.html"></iframe>
+    <br><br><br><br><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zDNaUi2cjv4?si=Vy-YgoSirP3fx6ro" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br><br><br><br><br>
+    <audio controls src="Adharam_madhuram_ringtone.mp3"></audio>
+    <br><br><br><br><br>
+    <video controls src="kobe_23.mp4" width="400" height="200"></video>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <div class="heading">
+                <h2>PASSWORD GENERATOR</h2>
+            </div>
+            <div class="textArea">
+                <textarea id="password-text"></textarea>
+                <img src="copy.svg" alt="copy Password" height="20px" width="20px" id="copyImg" />
+            </div>
+            <div class="sample">
+                <div class="passwordLengthContainer">
+                    <p>Password Length</p>
+                    <p id="lengthContainer">10</p>
+                </div>
+                <div class="passwordLengthDiv">
+                    <input type="range" min="1" max="20" value="10" id="passwordLength" />
+                </div>
+                <div class="checkboxs">
+                    <div>
+                        <input type="checkbox" name="" id="includeUppercase" checked />
+                        <label for="includeUppercase">Include Uppercase Letters</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="includeLowercase" checked />
+                        <label for="includeLowercase">Include Lowercase Letters</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="inclideNumbers" checked />
+                        <label for="inclideNumbers">Include Numbers</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="inclideSymbols" checked />
+                        <label for="inclideSymbols">Include Symbols</label>
+                    </div>
+
+                </div>
+                <div class="strength">
+                    <p>Strength</p>
+                    <div id="strengthColor"></div>
+                </div>
+                <div class="generatePassword">
+                    <button id="generatePassword">GENERATE PASSWORD</button>
+                    <!-- <p>&#10003;</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

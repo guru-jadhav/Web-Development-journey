@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Modal</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div id="wrapper" class="w-screen h-screen overflow-hidden bg-slate-800 flex justify-center items-center relative">
+
+        <div
+            class="red w-40 h-40 bg-orange-400 rounded-full absolute top-[2rem] left-[32%] shadow-[0px_0px_50px_20px_rgba(0,0,0,0.25)] shadow-orange-900 z-[0]">
+
+        </div>
+        <div
+            class="red w-52 h-52 bg-purple-600 rounded-full absolute bottom-[3rem] right-[30%] shadow-[0px_0px_50px_20px_rgba(0,0,0,0.25)] shadow-purple-900 z-[0]">
+
+        </div>
+        <div
+            class="container bg-white bg-opacity-[.01] backdrop-blur-sm w-[25%] h-[70%] border-slate-200 border relative z-[1] rounded-3xl flex flex-col justify-evenly items-center">
+            <div
+                class="profile-img h-max w-max shadow-[0px_0px_20px_1px_rgba(0,0,0,0.25)] shadow-slate-500 rounded-full ">
+                <img src="./assets/Picsart_24-07-08_12-28-49-284.jpg" alt=""
+                    class="h-52 w-52 object-cover rounded-full">
+            </div>
+            <div class="name text-white text-3xl font-semibold">
+                Guru Jadhav
+            </div>
+            <div class="title text-gray-300 text-xl font-normal">
+                Full-Stack Developer at Iron Mountain
+            </div>
+            <div class="share w-[100%] h-max flex justify-evenly items-center">
+                <button id="shareProfile"
+                    class="w-[40%] p-[0.6rem] border border-slate-200 rounded-xl text-gray-300 hover:text-gray-50 hover:border-slate-50 hover:shadow-[0px_0px_10px_1px_rgba(0,0,0,0.25)] hover:shadow-slate-500"
+                    onclick="openModal()">Share My Profile</button>
+                <button
+                    class="w-[40%] p-[0.6rem] border border-slate-200 rounded-xl text-gray-300 hover:text-gray-50 hover:border-slate-50 hover:shadow-[0px_0px_10px_1px_rgba(0,0,0,0.25)] hover:shadow-slate-500">Follow
+                    Me</button>
+            </div>
+        </div>
+
+
+        <div
+            class="hidden text-white hiddenModal  border border-slate-200 rounded-3xl bg-black bg-opacity-60 backdrop-blur-sm h-[38%] w-[35%] flex flex-col justify-around items-center absolute z-[1]">
+            <div class="w-full flex justify-between">
+                <div class="text-3xl font-bold ml-[0.5rem] w-[50%]">Share My Profile</div>
+                <div class="cursor-pointer mr-[1.5rem]" id="close"><i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div>
+                Share this via
+            </div>
+            <div class="flex">
+                <div>a</div>
+                <div>b</div>
+                <div>c</div>
+                <div>d</div>
+                <div>e</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
